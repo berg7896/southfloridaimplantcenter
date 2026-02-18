@@ -764,7 +764,7 @@
    The form will POST JSON to your webhook on submit.
    ═══════════════════════════════════════════════════ */
 
-const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/Quzh0nPUlVkr8gUqFHeG/webhook-trigger/07bf87bf-579a-41ae-889d-331adbb06c90';
+const GHL_WEBHOOK_URL = '/api/webhook';
 
 function submitForm() {
   // Clear previous errors
@@ -806,8 +806,8 @@ function submitForm() {
   
   fetch(GHL_WEBHOOK_URL, {
     method: 'POST',
-    body: new URLSearchParams(payload),
-    mode: 'no-cors' // GHL webhooks may not return CORS headers
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload) // GHL webhooks may not return CORS headers
   })
   .then(() => {
     // Show success
