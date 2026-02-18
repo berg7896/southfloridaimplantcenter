@@ -765,6 +765,20 @@
    ═══════════════════════════════════════════════════ */
 
 const GHL_WEBHOOK_URL = '/api/webhook';
+// GCLID Capture — grabs ?gclid= from URL, stores in cookie for 90 days
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const gclid = params.get('gclid');
+  if (gclid) {
+    const expires = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toUTCString();
+    document.cookie = 'gclid=' + gclid + '; expires=' + expires + '; path=/';
+  }
+})();
+
+function getGclid() {
+  const match = document.cookie.match('(^|;)\\s*gclid=([^;]+)');
+  return match ? match[2] : '';
+}
 
 function submitForm() {
   // Clear previous errors
@@ -801,7 +815,8 @@ function submitForm() {
     location,
     service,
     source: 'South Florida Implant Center Landing Page',
-    page: window.location.href
+    page: window.location.href,
+    gclid: getGclid()
   };
   
   fetch(GHL_WEBHOOK_URL, {
