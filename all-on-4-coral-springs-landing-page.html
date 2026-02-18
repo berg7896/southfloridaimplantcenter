@@ -806,8 +806,7 @@ function submitForm() {
   
   fetch(GHL_WEBHOOK_URL, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
+    body: new URLSearchParams(payload),
     mode: 'no-cors' // GHL webhooks may not return CORS headers
   })
   .then(() => {
