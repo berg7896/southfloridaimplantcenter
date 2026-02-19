@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dental Implants Sunrise | South Florida Implant Center</title>
+<meta name="description" content="Dental implants in Sunrise, FL. Single implant package $1,789. Includes implant + abutment + crown + 5-year warranty. Free consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0C2340;
+    --navy-light: #163560;
+    --teal: #0097A7;
+    --teal-dark: #007B8A;
+    --teal-glow: #00BCD4;
+    --gold: #C9A84C;
+    --cream: #FAF8F5;
+    --white: #FFFFFF;
+    --gray-50: #F8F9FA;
+    --gray-100: #F0F1F3;
+    --gray-200: #E2E4E8;
+    --gray-400: #9CA3AF;
+    --gray-600: #6B7280;
+    --gray-800: #1F2937;
+    --red: #DC2626;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; color: var(--gray-800); background: var(--white); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .top-bar { background: var(--navy); padding: 10px 0; }
+  .top-bar-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap; }
+  .top-bar .location-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(0,151,167,0.2); border: 1px solid rgba(0,151,167,0.3); border-radius: 20px; padding: 4px 14px; color: var(--teal-glow); font-size: 13px; font-weight: 500; }
+  .top-bar span { color: rgba(255,255,255,0.7); font-size: 13px; }
+  .phone-header { background: var(--white); border-bottom: 1px solid var(--gray-200); padding: 14px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(12,35,64,0.08); }
+  .phone-header-inner { max-width: 1140px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; overflow: hidden; }
+  .logo-area { display: flex; align-items: center; gap: 12px; }
+  .logo-icon { width: 40px; height: 40px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-text { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 18px; color: var(--navy); line-height: 1.2; }
+  .logo-text small { display: block; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 11px; color: var(--gray-600); letter-spacing: 1.5px; text-transform: uppercase; }
+  .phone-cta { display: flex; align-items: center; gap: 10px; }
+  .phone-number { font-size: 17px; font-weight: 700; color: var(--navy); text-decoration: none; }
+  .phone-number:hover { color: var(--teal); }
+  .btn-call { display: inline-flex; align-items: center; gap: 8px; background: var(--teal); color: white; text-decoration: none; padding: 8px 14px; border-radius: 8px; font-weight: 600; font-size: 13px; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,151,167,0.3); white-space: nowrap; }
+  .btn-call:hover { background: var(--teal-dark); transform: translateY(-1px); }
+  .hero { background: linear-gradient(165deg, var(--navy) 0%, #0A1B30 55%, var(--navy-light) 100%); padding: 56px 0 64px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; top: -40%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,151,167,0.12) 0%, transparent 70%); border-radius: 50%; }
+  .hero-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 1fr 420px; gap: 48px; align-items: center; position: relative; z-index: 1; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,151,167,0.15); border: 1px solid rgba(0,151,167,0.25); border-radius: 24px; padding: 6px 16px; margin-bottom: 20px; font-size: 13px; font-weight: 500; color: var(--teal-glow); }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 700; color: var(--white); line-height: 1.15; margin-bottom: 18px; }
+  .hero h1 .city-highlight { color: var(--teal-glow); position: relative; }
+  .hero h1 .city-highlight::after { content: ''; position: absolute; bottom: 2px; left: 0; right: 0; height: 3px; background: var(--gold); border-radius: 2px; }
+  .hero-sub { font-size: 17px; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 28px; max-width: 520px; }
+  .hero-stats { display: flex; gap: 32px; }
+  .hero-stat-number { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; color: var(--gold); }
+  .hero-stat-label { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1.2px; margin-top: 2px; }
+  .form-card { background: var(--white); border-radius: 16px; padding: 32px 28px; box-shadow: 0 16px 48px rgba(0,0,0,0.2); position: relative; overflow: hidden; }
+  .form-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--teal), var(--gold)); border-radius: 16px 16px 0 0; }
+  .form-card h2 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; color: var(--navy); text-align: center; margin-bottom: 4px; }
+  .form-card .form-subtitle { text-align: center; color: var(--gray-600); font-size: 14px; margin-bottom: 6px; }
+  .form-card .form-subtitle .free-tag { color: var(--teal); font-weight: 600; }
+  .form-urgency { display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,151,167,0.08); border: 1px solid rgba(0,151,167,0.15); border-radius: 8px; padding: 8px 14px; margin-bottom: 20px; font-size: 13px; font-weight: 500; color: var(--teal-dark); }
+  .form-urgency .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.8); } }
+  .form-group { margin-bottom: 14px; }
+  .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 5px; }
+  .form-group input, .form-group select { width: 100%; padding: 12px 14px; border: 1.5px solid var(--gray-200); border-radius: 10px; font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--gray-800); background: var(--white); transition: border-color 0.2s, box-shadow 0.2s; outline: none; }
+  .form-group input:focus, .form-group select:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(0,151,167,0.12); }
+  .form-group input::placeholder { color: var(--gray-400); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .btn-submit { width: 100%; padding: 14px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; border: none; border-radius: 10px; font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 700; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 16px rgba(0,151,167,0.35); display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 18px; }
+  .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,151,167,0.45); }
+  .btn-submit:active { transform: translateY(0); }
+  .btn-submit.loading { opacity: 0.7; pointer-events: none; }
+  .form-success { display: none; text-align: center; padding: 32px 16px; }
+  .form-success .success-icon { width: 64px; height: 64px; border-radius: 50%; background: rgba(0,151,167,0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+  .form-success h3 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--navy); margin-bottom: 8px; }
+  .form-success p { font-size: 15px; color: var(--gray-600); line-height: 1.6; }
+  .form-trust { display: flex; align-items: center; justify-content: center; gap: 16px; padding-top: 14px; font-size: 11px; color: var(--gray-400); }
+  .form-trust span { display: flex; align-items: center; gap: 4px; }
+  .form-group.error input, .form-group.error select { border-color: var(--red); }
+  .form-group .error-msg { display: none; font-size: 12px; color: var(--red); margin-top: 4px; }
+  .form-group.error .error-msg { display: block; }
+  .trust-strip { background: var(--cream); border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); padding: 24px 0; }
+  .trust-strip-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+  .trust-item { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; color: var(--navy); }
+  .trust-icon { width: 36px; height: 36px; background: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 3px rgba(12,35,64,0.08); }
+  section { padding: 72px 0; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .section-label { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 600; color: var(--navy); line-height: 1.2; margin-bottom: 16px; }
+  .section-subtitle { font-size: 17px; color: var(--gray-600); line-height: 1.7; max-width: 640px; }
+  .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+  .step-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 14px; padding: 28px 24px; transition: all 0.3s; }
+  .step-card:hover { border-color: var(--teal); box-shadow: 0 4px 16px rgba(12,35,64,0.1); transform: translateY(-4px); }
+  .step-num { width: 36px; height: 36px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; margin-bottom: 16px; }
+  .step-card h3 { font-size: 17px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
+  .step-card p { font-size: 14px; color: var(--gray-600); line-height: 1.6; }
+  .benefits-section { background: linear-gradient(165deg, var(--navy) 0%, #0A1B30 100%); }
+  .benefits-section .section-label { color: var(--gold); }
+  .benefits-section .section-title { color: var(--white); }
+  .benefits-section .section-subtitle { color: rgba(255,255,255,0.65); }
+  .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+  .benefit-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 28px 24px; transition: all 0.3s; }
+  .benefit-card:hover { background: rgba(255,255,255,0.08); border-color: rgba(0,188,212,0.3); }
+  .benefit-icon { width: 44px; height: 44px; background: rgba(0,151,167,0.15); border-radius: 11px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+  .benefit-card h3 { font-size: 17px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+  .benefit-card p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+  .testimonial-section { background: var(--cream); }
+  .testimonial-card { max-width: 700px; margin: 40px auto 0; background: var(--white); border-radius: 16px; padding: 40px; box-shadow: 0 4px 16px rgba(12,35,64,0.1); position: relative; }
+  .testimonial-card::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: 80px; color: var(--teal); opacity: 0.15; position: absolute; top: 12px; left: 28px; line-height: 1; }
+  .testimonial-text { font-size: 18px; line-height: 1.8; color: var(--gray-800); font-style: italic; position: relative; z-index: 1; }
+  .testimonial-author { margin-top: 20px; display: flex; align-items: center; gap: 12px; }
+  .testimonial-avatar { width: 48px; height: 48px; background: linear-gradient(135deg, var(--teal), var(--navy)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 18px; }
+  .testimonial-name { font-weight: 600; color: var(--navy); font-size: 15px; }
+  .testimonial-detail { font-size: 13px; color: var(--gray-600); }
+  .testimonial-stars { color: var(--gold); font-size: 16px; letter-spacing: 2px; }
+  .financing-box { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; align-items: center; }
+  .financing-visual { background: linear-gradient(135deg, var(--navy), var(--navy-light)); border-radius: 16px; padding: 48px 40px; text-align: center; position: relative; overflow: hidden; }
+  .financing-visual::before { content: ''; position: absolute; top: -50%; right: -30%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%); border-radius: 50%; }
+  .financing-visual .price-from { font-size: 14px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; position: relative; }
+  .financing-visual .price-amount { font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 700; color: var(--white); position: relative; }
+  .financing-visual .price-period { font-size: 16px; color: rgba(255,255,255,0.5); position: relative; }
+  .financing-details h3 { font-size: 22px; font-weight: 600; color: var(--navy); margin-bottom: 16px; }
+  .financing-details p { font-size: 15px; color: var(--gray-600); line-height: 1.7; margin-bottom: 20px; }
+  .financing-list { list-style: none; }
+  .financing-list li { display: flex; align-items: center; gap: 10px; padding: 8px 0; font-size: 15px; color: var(--gray-800); }
+  .financing-list li svg { flex-shrink: 0; }
+  .faq-list { max-width: 740px; margin: 40px auto 0; }
+  .faq-item { border-bottom: 1px solid var(--gray-200); padding: 20px 0; }
+  .faq-question { display: flex; justify-content: space-between; align-items: center; cursor: pointer; gap: 16px; }
+  .faq-question h3 { font-size: 17px; font-weight: 600; color: var(--navy); }
+  .faq-toggle { width: 28px; height: 28px; border-radius: 50%; background: var(--gray-100); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.3s; }
+  .faq-item.open .faq-toggle { background: var(--teal); transform: rotate(45deg); }
+  .faq-item.open .faq-toggle svg path { stroke: white; }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+  .faq-answer p { padding-top: 14px; font-size: 15px; color: var(--gray-600); line-height: 1.7; }
+  .faq-item.open .faq-answer { max-height: 300px; }
+  .bottom-cta { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); padding: 64px 0; text-align: center; position: relative; overflow: hidden; }
+  .bottom-cta::before { content: ''; position: absolute; top: -50%; left: -20%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); border-radius: 50%; }
+  .bottom-cta h2 { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 600; color: var(--white); margin-bottom: 12px; position: relative; }
+  .bottom-cta p { font-size: 17px; color: rgba(255,255,255,0.8); margin-bottom: 28px; position: relative; }
+  .btn-cta-bottom { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--teal-dark); text-decoration: none; padding: 16px 36px; border-radius: 10px; font-weight: 700; font-size: 17px; transition: all 0.2s; box-shadow: 0 4px 16px rgba(0,0,0,0.15); position: relative; }
+  .btn-cta-bottom:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+  footer { background: var(--navy); padding: 32px 0; text-align: center; }
+  footer p { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.8; }
+  footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+  footer a:hover { color: var(--teal-glow); }
+  @media (max-width: 1024px) { .hero-inner { grid-template-columns: 1fr 380px; gap: 32px; } .hero h1 { font-size: 38px; } }
+  @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; gap: 32px; } .hero h1 { font-size: 34px; } .hero-stats { gap: 24px; } .hero-stat-number { font-size: 26px; } .steps-grid { grid-template-columns: repeat(2, 1fr); } .benefits-grid { grid-template-columns: 1fr; } .financing-box { grid-template-columns: 1fr; } .phone-number { display: none; } .section-title { font-size: 28px; } }
+  @media (max-width: 600px) { .hero { padding: 36px 0 44px; } .hero h1 { font-size: 28px; } .hero-sub { font-size: 15px; } .form-card { padding: 24px 20px; } .form-row { grid-template-columns: 1fr; } .steps-grid { grid-template-columns: 1fr; } .trust-strip-inner { gap: 20px; } section { padding: 48px 0; } .testimonial-card { padding: 28px 24px; } .financing-visual { padding: 36px 24px; } .financing-visual .price-amount { font-size: 42px; } }
+  .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--white); padding: 12px 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.1); z-index: 200; }
+  .mobile-sticky-cta a { display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--teal); color: white; text-decoration: none; padding: 14px; border-radius: 10px; font-weight: 700; font-size: 16px; }
+  @media (max-width: 768px) { .mobile-sticky-cta { display: block; } footer { padding-bottom: 80px; } }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1013052422"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1013052422');
+</script>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="location-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Sunrise, FL
+    </div>
+    <span>5 Convenient South Florida Locations</span>
+  </div>
+</div>
+
+<header class="phone-header">
+  <div class="phone-header-inner">
+    <div class="logo-area">
+      <div class="logo-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="logo-text">
+        South Florida Implant Center
+        <small>ADVANCED IMPLANT DENTISTRY</small>
+      </div>
+    </div>
+    <div class="phone-cta">
+      <a href="tel:+17543464751" class="phone-number">(754) 346-4751</a>
+      <a href="tel:+17543464751" class="btn-call">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Now Accepting New Patients in Sunrise
+      </div>
+      <h1>Dental Implants in <span class="city-highlight">Sunrise</span></h1>
+      <p class="hero-sub">Replace missing teeth with permanent dental implants at our Sunrise location. Our experienced implant team provides single implants, implant crowns, and implant bridges &mdash; all in-house. <strong style="color: var(--gold);">Single implant package just $1,789.</strong></p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-number">5,000+</div><div class="hero-stat-label">Implants Placed</div></div>
+        <div class="hero-stat"><div class="hero-stat-number">20+</div><div class="hero-stat-label">Years Experience</div></div>
+        <div class="hero-stat"><div class="hero-stat-number">4.9</div><div class="hero-stat-label">Star Rating</div></div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h2>Free Implant Consultation</h2>
+      <p class="form-subtitle">Includes <span class="free-tag">FREE</span> 3D CT Scan ($500 value)</p>
+      <div class="form-urgency">
+        <span class="pulse-dot"></span>
+        Limited slots this week &mdash; request yours now
+      </div>
+      <div id="formFields">
+        <div class="form-row">
+          <div class="form-group"><label for="firstName">First Name</label><input type="text" id="firstName" placeholder="John" required><div class="error-msg">Please enter your first name</div></div>
+          <div class="form-group"><label for="lastName">Last Name</label><input type="text" id="lastName" placeholder="Smith" required><div class="error-msg">Please enter your last name</div></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="john@email.com" required><div class="error-msg">Please enter a valid email</div></div>
+          <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" placeholder="(754) 346-4751" required><div class="error-msg">Please enter your phone number</div></div>
+        </div>
+        <input type="hidden" id="location" value="Sunrise">
+        <input type="hidden" id="service" value="Dental Implants">
+        <button type="button" class="btn-submit" id="submitBtn" onclick="submitForm()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Get My Free Consultation
+        </button>
+      </div>
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <h3>You're All Set!</h3>
+        <p>Our team will call you within 1 hour to schedule your free implant consultation at our Sunrise office.</p>
+      </div>
+      <div class="form-trust">
+        <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> HIPAA Compliant</span>
+        <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Your info is secure</span>
+        <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Respond in &lt;1 hr</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="trust-strip-inner">
+    <div class="trust-item"><div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>Experienced Implant Team</div>
+    <div class="trust-item"><div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>3D CT Scan Included</div>
+    <div class="trust-item"><div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>In-House Surgical Center</div>
+    <div class="trust-item"><div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>0% Financing Available</div>
+    <div class="trust-item"><div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>5 South FL Locations</div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-label">How It Works</div>
+    <div class="section-title">Your Journey in 4 Simple Steps</div>
+    <div class="steps-grid">
+      <div class="step-card"><div class="step-num">1</div><h3>Free Consultation</h3><p>Meet with our implant specialist for a comprehensive exam, 3D CT scan, and personalized treatment plan &mdash; all at no cost to you.</p></div>
+      <div class="step-card"><div class="step-num">2</div><h3>Custom Treatment Plan</h3><p>We design your restoration digitally, review financing options, and schedule your procedure at a time that works for you.</p></div>
+      <div class="step-card"><div class="step-num">3</div><h3>Implant Placement</h3><p>A single titanium implant is placed under comfortable sedation. It fuses naturally with your jawbone over 3-4 months.</p></div>
+      <div class="step-card"><div class="step-num">4</div><h3>Your New Tooth</h3><p>A custom-crafted crown is attached to your implant. It looks, feels, and functions just like a natural tooth.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits-section">
+  <div class="container">
+    <div class="section-label">Why Choose Us?</div>
+    <div class="section-title">The Best Value in Dental Implants</div>
+    <div class="benefits-grid">
+      <div class="benefit-card"><div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00BCD4" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>Complete Package: $1,789</h3><p>Our all-inclusive price covers the implant, abutment, and custom crown. No hidden fees, no surprise costs.</p></div>
+      <div class="benefit-card"><div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00BCD4" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>5-Year Warranty</h3><p>Every implant comes with a 5-year warranty when you join our in-house discount plan. Total peace of mind.</p></div>
+      <div class="benefit-card"><div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00BCD4" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>Looks & Feels Natural</h3><p>Custom-matched to your existing teeth in color, shape, and size. No one will know it's an implant.</p></div>
+      <div class="benefit-card"><div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00BCD4" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>Preserves Jawbone</h3><p>Unlike bridges or dentures, implants stimulate your jawbone and prevent bone loss that causes facial aging.</p></div>
+      <div class="benefit-card"><div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00BCD4" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>Eat Everything</h3><p>Implants restore 100% of your biting force. Eat steak, apples, corn &mdash; whatever you want.</p></div>
+      <div class="benefit-card"><div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00BCD4" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>Lifetime Solution</h3><p>With proper care, dental implants can last a lifetime. No adhesives, no removable parts, no hassle.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <div class="container" style="text-align:center;">
+    <div class="section-label">Patient Stories</div>
+    <div class="section-title">Real Patients, Real Results</div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">I lost a front tooth and was devastated. The team at South Florida Implant Center gave me a beautiful implant that looks completely natural. The whole process was smooth and painless. I smile with confidence again!</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">R</div>
+        <div>
+          <div class="testimonial-name">Robert K.</div>
+          <div class="testimonial-detail">Implant Patient</div>
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Affordable Options</div>
+    <div class="section-title">Pricing That Works for You</div>
+    <div class="financing-box">
+      <div class="financing-visual">
+        <div class="price-from">Complete Package</div>
+        <div class="price-amount">$1,789</div>
+        <div class="price-period">Implant + Abutment + Crown</div>
+      </div>
+      <div class="financing-details">
+        <h3>Multiple Payment Options Available</h3>
+        <p>Our financial coordinators will work with you to find a plan that fits your budget.</p>
+        <ul class="financing-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Complete implant package: $1,789</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Includes 5-year warranty with discount plan</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>0% financing available for qualified patients</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>We accept most dental insurance plans</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--gray-50);">
+  <div class="container" style="text-align:center;">
+    <div class="section-label">Common Questions</div>
+    <div class="section-title">Dental Implants FAQ</div>
+    <div class="faq-list" style="text-align:left;">
+      <div class="faq-item open">
+        <div class="faq-question" onclick="toggleFaq(this)"><h3>How much does a single dental implant cost?</h3><div class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div></div>
+        <div class="faq-answer"><p>A single dental implant at South Florida Implant Center is just $1,789. This includes the implant, abutment, and custom crown &mdash; plus a 5-year warranty with our in-house discount plan.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)"><h3>Is getting a dental implant painful?</h3><div class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div></div>
+        <div class="faq-answer"><p>Most patients report the procedure is much easier than expected. We use local anesthesia and sedation options to ensure you're completely comfortable. Post-procedure discomfort is typically managed with over-the-counter pain medication.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)"><h3>How long does the implant process take?</h3><div class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div></div>
+        <div class="faq-answer"><p>The implant is placed in a single visit (about 1 hour). After 3-4 months of healing, your permanent crown is attached in a second visit. You'll have a temporary restoration in the meantime.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)"><h3>Am I a candidate for dental implants?</h3><div class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div></div>
+        <div class="faq-answer"><p>Most adults with missing teeth are candidates. A free consultation with 3D CT scan is the best way to find out. Even patients with some bone loss may qualify.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)"><h3>Why choose South Florida Implant Center?</h3><div class="faq-toggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div></div>
+        <div class="faq-answer"><p>Our experienced implant team has placed over 5,000 implants. We perform every step in our own surgical centers &mdash; no referrals. With 5 locations across South Florida, expert care is always close to home.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bottom-cta">
+  <div class="container">
+    <h2>Ready to Transform Your Smile?</h2>
+    <p>Schedule your free dental implant consultation at our Sunrise office today.</p>
+    <a href="tel:+17543464751" class="btn-cta-bottom">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Call (754) 346-4751
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 South Florida Implant Center &mdash; Sunrise, FL<br><a href="tel:+17543464751">(754) 346-4751</a> &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms</a></p>
+  </div>
+</footer>
+
+<div class="mobile-sticky-cta">
+  <a href="tel:+17543464751">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call Now &mdash; Free Consultation
+  </a>
+</div>
+
+<script>
+const GHL_WEBHOOK_URL = '/api/webhook';
+
+// GCLID Capture
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const gclid = params.get('gclid');
+  if (gclid) {
+    const expires = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toUTCString();
+    document.cookie = 'gclid=' + gclid + '; expires=' + expires + '; path=/';
+  }
+})();
+
+function getGclid() {
+  const match = document.cookie.match('(^|;)\\s*gclid=([^;]+)');
+  return match ? match[2] : '';
+}
+
+function submitForm() {
+  document.querySelectorAll('.form-group').forEach(g => g.classList.remove('error'));
+  const firstName = document.getElementById('firstName').value.trim();
+  const lastName = document.getElementById('lastName').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const location = document.getElementById('location').value;
+  const service = document.getElementById('service').value;
+
+  let hasError = false;
+  if (!firstName) { document.getElementById('firstName').closest('.form-group').classList.add('error'); hasError = true; }
+  if (!lastName) { document.getElementById('lastName').closest('.form-group').classList.add('error'); hasError = true; }
+  if (!email || !email.includes('@')) { document.getElementById('email').closest('.form-group').classList.add('error'); hasError = true; }
+  if (!phone || phone.length < 7) { document.getElementById('phone').closest('.form-group').classList.add('error'); hasError = true; }
+  if (hasError) return;
+
+  const btn = document.getElementById('submitBtn');
+  btn.classList.add('loading');
+  btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="animation:spin 1s linear infinite"><circle cx="12" cy="12" r="10"/></svg> Submitting...';
+
+  const payload = {
+    firstName, lastName, email, phone, location, service,
+    source: 'South Florida Implant Center Landing Page',
+    page: window.location.href,
+    gclid: getGclid()
+  };
+
+  fetch(GHL_WEBHOOK_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(() => {
+    document.getElementById('formFields').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+    gtag('event', 'conversion', {'send_to': 'AW-1013052422/KzpTCICX8vobEIboh-MD', 'value': 500.0, 'currency': 'USD'});
+  })
+  .catch(() => {
+    document.getElementById('formFields').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  });
+}
+
+document.getElementById('phone').addEventListener('input', function(e) {
+  let x = e.target.value.replace(/\D/g, '').substring(0, 10);
+  if (x.length > 6) x = '(' + x.substring(0,3) + ') ' + x.substring(3,6) + '-' + x.substring(6);
+  else if (x.length > 3) x = '(' + x.substring(0,3) + ') ' + x.substring(3);
+  else if (x.length > 0) x = '(' + x;
+  e.target.value = x;
+});
+
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+</script>
+<style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+</body>
+</html>
